@@ -22,7 +22,7 @@ const {
   waitForever
 } = require('./utils');
 const { Watermark } = require('./watermark');
-const { GITHUB_REPOSITORY, CI_PROJECT_URL, BITBUCKET_REPO_UUID } = process.env;
+const { GITHUB_REPOSITORY, CI_PROJECT_URL, BITBUCKET_REPO_UUID, TARGET_BRANCH } = process.env;
 
 const GIT_USER_NAME = 'Olivaw[bot]';
 const GIT_USER_EMAIL = 'olivaw@iterative.ai';
@@ -545,7 +545,10 @@ class CML {
     const sha = await this.triggerSha();
     const shaShort = sha.substr(0, 8);
 
-    const target = await this.branch();
+    let target = await this.branch();
+    if (TARGET_BRANCH) {
+      target = TARGET_BRANCH;
+    }
     const source = branch || `${target}-cml-pr-${shaShort}`;
 
     const branchExists = (
