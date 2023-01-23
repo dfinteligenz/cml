@@ -11,21 +11,23 @@ describe('CML e2e', () => {
 
       Global Options:
         --log                    Logging verbosity
-                [string] [choices: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [default: \\"info\\"]
+        [cadena de caracteres] [selección: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [defecto:
+                                                                               \\"info\\"]
         --driver                 Git provider where the repository is hosted
-          [string] [choices: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [default: infer from the
-                                                                          environment]
+         [cadena de caracteres] [selección: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [defecto:
+                                                           infer from the environment]
         --repo                   Repository URL or slug
-                                        [string] [default: infer from the environment]
+                          [cadena de caracteres] [defecto: infer from the environment]
         --driver-token, --token  CI driver personal/project access token (PAT)
-                                        [string] [default: infer from the environment]
-        --help                   Show help                                   [boolean]
+                          [cadena de caracteres] [defecto: infer from the environment]
+        --help                   Muestra ayuda                              [booleano]
 
-      Options:
+      Opciones:
         --fetch-depth  Number of commits to fetch (use \`0\` for all branches & tags)
-                                                                              [number]
-        --user-email   Git user email        [string] [default: \\"olivaw@iterative.ai\\"]
-        --user-name    Git user name                 [string] [default: \\"Olivaw[bot]\\"]"
+                                                                              [número]
+        --user-email   Git user email
+                               [cadena de caracteres] [defecto: \\"olivaw@iterative.ai\\"]
+        --user-name    Git user name   [cadena de caracteres] [defecto: \\"Olivaw[bot]\\"]"
     `);
   });
 });

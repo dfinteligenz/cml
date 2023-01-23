@@ -8,32 +8,34 @@ describe('Comment integration tests', () => {
 
       Global Options:
         --log                    Logging verbosity
-                [string] [choices: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [default: \\"info\\"]
+        [cadena de caracteres] [selección: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [defecto:
+                                                                               \\"info\\"]
         --driver                 Git provider where the repository is hosted
-          [string] [choices: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [default: infer from the
-                                                                          environment]
+         [cadena de caracteres] [selección: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [defecto:
+                                                           infer from the environment]
         --repo                   Repository URL or slug
-                                        [string] [default: infer from the environment]
+                          [cadena de caracteres] [defecto: infer from the environment]
         --driver-token, --token  CI driver personal/project access token (PAT)
-                                        [string] [default: infer from the environment]
-        --help                   Show help                                   [boolean]
+                          [cadena de caracteres] [defecto: infer from the environment]
+        --help                   Muestra ayuda                              [booleano]
 
-      Options:
+      Opciones:
         --target                    Comment type (\`commit\`, \`pr\`, \`commit/f00bar\`,
                                     \`pr/42\`, \`issue/1337\`),default is automatic (\`pr\`
-                                    but fallback to \`commit\`).                [string]
+                                    but fallback to \`commit\`).  [cadena de caracteres]
         --watch                     Watch for changes and automatically update the
-                                    comment                                  [boolean]
+                                    comment                                 [booleano]
         --publish                   Upload any local images found in the Markdown
-                                    report                   [boolean] [default: true]
+                                    report                  [booleano] [defecto: true]
         --publish-url               Self-hosted image server URL
-                                           [string] [default: \\"https://asset.cml.dev\\"]
+                             [cadena de caracteres] [defecto: \\"https://asset.cml.dev\\"]
         --publish-native, --native  Uses driver's native capabilities to upload assets
                                     instead of CML's storage; not available on GitHub
-                                                                             [boolean]
+                                                                            [booleano]
         --watermark-title           Hidden comment marker (used for targeting in
                                     subsequent \`cml comment update\`); \\"{workflow}\\" &
-                                    \\"{run}\\" are auto-replaced   [string] [default: \\"\\"]"
+                                    \\"{run}\\" are auto-replaced
+                                                  [cadena de caracteres] [defecto: \\"\\"]"
     `);
   });
 });

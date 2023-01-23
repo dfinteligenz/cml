@@ -9,23 +9,26 @@ describe('CML cli test', () => {
 
       Global Options:
             --log                    Logging verbosity
-                [string] [choices: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [default: \\"info\\"]
+        [cadena de caracteres] [selección: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [defecto:
+                                                                               \\"info\\"]
             --driver                 Git provider where the repository is hosted
-          [string] [choices: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [default: infer from the
-                                                                          environment]
+         [cadena de caracteres] [selección: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [defecto:
+                                                           infer from the environment]
             --repo                   Specifies the repo to be used. If not specified
                                      is extracted from the CI ENV.
-                                        [string] [default: infer from the environment]
+                          [cadena de caracteres] [defecto: infer from the environment]
             --driver-token, --token  CI driver personal/project access token (PAT)
-                                        [string] [default: infer from the environment]
-            --help                   Show help                               [boolean]
+                          [cadena de caracteres] [defecto: infer from the environment]
+            --help                   Muestra ayuda                          [booleano]
 
-      Options:
-            --md         Output in markdown format [title || name](url)      [boolean]
-        -t, --title      Markdown title [title](url) or ![](url title)        [string]
+      Opciones:
+            --md         Output in markdown format [title || name](url)     [booleano]
+        -t, --title      Markdown title [title](url) or ![](url title)
+                                                                [cadena de caracteres]
             --native     Uses driver's native capabilities to upload assets instead of
-                         CML's storage; not available on GitHub              [boolean]
-            --mime-type  MIME type    [string] [default: infer from the file contents]"
+                         CML's storage; not available on GitHub             [booleano]
+            --mime-type  MIME type
+                        [cadena de caracteres] [defecto: infer from the file contents]"
     `);
   });
 });

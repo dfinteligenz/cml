@@ -14,27 +14,29 @@ describe('CML e2e', () => {
 
       Global Options:
         --log                    Logging verbosity
-                [string] [choices: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [default: \\"info\\"]
+        [cadena de caracteres] [selección: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [defecto:
+                                                                               \\"info\\"]
         --driver                 Git provider where the repository is hosted
-          [string] [choices: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [default: infer from the
-                                                                          environment]
+         [cadena de caracteres] [selección: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [defecto:
+                                                           infer from the environment]
         --repo                   Repository URL or slug
-                                        [string] [default: infer from the environment]
+                          [cadena de caracteres] [defecto: infer from the environment]
         --driver-token, --token  GITHUB_TOKEN or Github App token. Personal access
                                  token won't work
-                                        [string] [default: infer from the environment]
-        --help                   Show help                                   [boolean]
+                          [cadena de caracteres] [defecto: infer from the environment]
+        --help                   Muestra ayuda                              [booleano]
 
-      Options:
+      Opciones:
         --commit-sha, --head-sha  Commit SHA linked to this comment
-                                                              [string] [default: HEAD]
+                                                [cadena de caracteres] [defecto: HEAD]
         --conclusion              Conclusion status of the check
-           [string] [choices: \\"success\\", \\"failure\\", \\"neutral\\", \\"cancelled\\", \\"skipped\\",
-                                                     \\"timed_out\\"] [default: \\"success\\"]
+                   [cadena de caracteres] [selección: \\"success\\", \\"failure\\", \\"neutral\\",
+                             \\"cancelled\\", \\"skipped\\", \\"timed_out\\"] [defecto: \\"success\\"]
         --status                  Status of the check
-                    [string] [choices: \\"queued\\", \\"in_progress\\", \\"completed\\"] [default:
-                                                                          \\"completed\\"]
-        --title                   Title of the check  [string] [default: \\"CML Report\\"]"
+              [cadena de caracteres] [selección: \\"queued\\", \\"in_progress\\", \\"completed\\"]
+                                                                [defecto: \\"completed\\"]
+        --title                   Title of the check
+                                        [cadena de caracteres] [defecto: \\"CML Report\\"]"
     `);
   });
 });

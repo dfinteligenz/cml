@@ -8,7 +8,7 @@ describe('command-line interface tests', () => {
     expect(output).toMatchInlineSnapshot(`
       "cml.js <command>
 
-      Commands:
+      Comandos:
         cml.js check              Manage CI checks
         cml.js comment            Manage comments
         cml.js pr <glob path...>  Manage pull requests
@@ -19,18 +19,19 @@ describe('command-line interface tests', () => {
 
       Global Options:
         --log                    Logging verbosity
-                [string] [choices: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [default: \\"info\\"]
+        [cadena de caracteres] [selección: \\"error\\", \\"warn\\", \\"info\\", \\"debug\\"] [defecto:
+                                                                               \\"info\\"]
         --driver                 Git provider where the repository is hosted
-          [string] [choices: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [default: infer from the
-                                                                          environment]
+         [cadena de caracteres] [selección: \\"github\\", \\"gitlab\\", \\"bitbucket\\"] [defecto:
+                                                           infer from the environment]
         --repo                   Repository URL or slug
-                                        [string] [default: infer from the environment]
+                          [cadena de caracteres] [defecto: infer from the environment]
         --driver-token, --token  CI driver personal/project access token (PAT)
-                                        [string] [default: infer from the environment]
-        --help                   Show help                                   [boolean]
+                          [cadena de caracteres] [defecto: infer from the environment]
+        --help                   Muestra ayuda                              [booleano]
 
-      Options:
-        --version  Show version number                                       [boolean]"
+      Opciones:
+        --version  Muestra número de versión                                [booleano]"
     `);
   });
 });
