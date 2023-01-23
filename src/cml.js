@@ -561,7 +561,6 @@ class CML {
     if (targetBranchExists) {
       target = targetBranch;
     }
-
     const source = branch || `${target}-cml-pr-${shaShort}`;
 
     const branchExists = (
