@@ -548,10 +548,10 @@ class CML {
 
     let target = await this.branch();
     try {
-      exec(
+      await exec(
         'git',
         'ls-remote',
-        exec('git', 'config', '--get', `remote.${remote}.url`),
+        await exec('git', 'config', '--get', `remote.${remote}.url`),
         targetBranch
       );
 
